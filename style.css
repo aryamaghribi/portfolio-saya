@@ -1,125 +1,126 @@
+/* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #25253a);
+    color: #e0e0e0;
+    line-height: 1.6;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none
+nav a:hover {
+    color: #ffd700;
+}
 
-    body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #2b2b3c;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid #6a11cb;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     padding: 0;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
+li {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
     list-style: none;
-    padding: 0;
+    transition: background 0.3s ease;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+li:hover {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none
+form {
+    display: grid;
+    gap: 15px;
+}
 
-    section {
-        padding: 20px;
-        margin: 20px 0;
-    }
-    
-    h2 {
-        border-bottom: 2px solid #333;
-        padding-bottom: 10px;
-    }
-    
-    #about img {
-        width: 150px; /* Atur ukuran gambar profil */
-        border-radius: 50%; /* Membuat gambar profil menjadi bulat */
-    }
-    
-    .project {
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin: 10px 0;
-    }
-    
-    .project img {
-        width: 100%; /* Gambar proyek akan menyesuaikan lebar kontainer */
-        height: auto; /* Menjaga rasio aspek gambar */
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    form label {
-        margin: 10px 0 5px;
-    }
-    
-    form input, form textarea {
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    
-    button {
-        padding: 10px;
-        background: #333;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background: #555;
-    }
-    
-    footer {
-        text-align: center;
-        padding: 20px 0;
-        background: #333;
-        color: #fff;
-    }
+input, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #3a3a4f;
+    color: white;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    background: #4e4e6a;
+}
+
+button {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #dd2476, #ff512f);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
